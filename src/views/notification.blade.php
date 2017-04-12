@@ -8,7 +8,7 @@
         padding: 1em 1.5em;
         line-height: 1.4285em;
         border-radius: 0.28571429rem;
-        /*right: -388px;*/
+        right: -388px;
         top: 16px;
         transition: opacity .3s, transform .3s, right .3s;
     }
@@ -45,6 +45,10 @@
         font-size: 18px;
         letter-spacing: 4px;
         margin-bottom: 4px;
+        text-align: left;
+    }
+    .notify-message .notify-box .content{
+        text-align: left !important;
     }
 
     .notify-message .notify-box .header.success {
@@ -121,12 +125,12 @@
 
     </div>
     <script>
-        /*$('.notify-message').animate({right: '16px', opacity: 1}).fadeIn('fast').delay(3000).animate({
+        $('.notify-message').animate({right: '26px', opacity: 1}).fadeIn('fast').delay(3000).animate({
             right: '-388px',
             opacity: 1
         });
         $('.notify-close').click(function () {
             $('.notify-message').hide();
-        });*/
+        });
     </script>
 @endif

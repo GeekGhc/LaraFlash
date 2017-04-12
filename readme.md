@@ -3,12 +3,15 @@
 ## 介绍
 > 基于 [Jeffery Way's Flash Package](https://github.com/laracasts/flash)
 
+## 预览
+![1.gif](screenshot/1.gif)
+![2.gif](screenshot/2.gif)
 ## 安装
 #### 使用`composer`安装
 ```
 composer require geekghc/flash
 ```
-或者在你的`compoer.json`里`require`部分添加
+或者在你的`composer.json`里`require`部分添加
 ```php
 "geekghc/flash":"~1.0"
 ```
@@ -59,7 +62,7 @@ public function store()
 
 ## 例子
 在此之前使用`CDN`的形式引入`jquery`和`font-awesome`
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>

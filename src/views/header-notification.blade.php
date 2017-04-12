@@ -30,8 +30,9 @@
         text-align: center;
     }
 
-    .notify-message .notify-box .content {
+    .notify-message .notify-box .header-content {
         font-size: 18px;
+        font-weight: 500;
     }
 
     .notify-message.success {
@@ -62,7 +63,7 @@
 @if(Session::has('flash_notification.message'))
     <div class="notify-message {{ session('flash_notification.type') }}">
         <div class="notify-box">
-            <div class="content">{{ session('flash_notification.message') }}</div>
+            <div class="header-content">{{ session('flash_notification.message') }}</div>
         </div>
         <i class="fa fa-times notify-close"></i>
     </div>
