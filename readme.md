@@ -44,7 +44,7 @@ public function store()
 - LaraFlash::error('Message')
 - LaraFlash::warning('Message')
 
-#### 当然你可也以使用```myflash()```这样的`helper function`
+#### 当然你可也以使用```laraflash()```这样的`helper function`
 - laraflash()('Message!')
 - laraflash()->success('Message!')
 - laraflash()->info('Message!')
