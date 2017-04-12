@@ -9,7 +9,7 @@
         transition: opacity .3s, top .9s;
         background: #f8f8f9;
         padding: 1em 1.5em;
-        /*opacity: 0;*/
+        opacity: 0;
         overflow: hidden;
         line-height: 1.4285em;
         border-radius: 0.48971429rem;
