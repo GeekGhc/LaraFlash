@@ -8,14 +8,18 @@
 ```
 composer require geekghc/laraflash
 ```
-#### 在```config/app.php```添加`service provider`
+或者在你的`compoer.json`里`require`部分添加
+```php
+"geekghc/laraflash":"~1.0"
 ```
+#### 下载完毕之后在```config/app.php```添加`service provider`
+```php
 'providers' => [
-   GeekGhc\LaraFlash\MyFlashProvider::class,
-   ];
+    GeekGhc\LaraFlash\MyFlashProvider::class,
+];
 ```
 为了方便使用 可以再去添加一个`alias`
-```
+```php
 'aliases' => [
     'LaraFlash'=>GeekGhc\LaraFlash\Flash::class,
 ];
@@ -32,9 +36,11 @@ public function store()
 }
 ```
 #### 在你的视图中添加```notification```视图
-```
+```php
 @include('laraflash::notification')
+```
 或者
+```php
 @include('laraflash::header-notification')
 ```
 
@@ -45,20 +51,19 @@ public function store()
 - LaraFlash::warning('Message')
 
 #### 当然你可也以使用```laraflash()```这样的`helper function`
-- laraflash()('Message!')
+- laraflash('Message!')
 - laraflash()->success('Message!')
 - laraflash()->info('Message!')
 - laraflash()->error('Message!')
 - laraflash()->warning('Message!')
 
 ## 例子
-在此之前使用`cdn的形式`引入`jquery`和`font-awesome`
+在此之前使用`CDN`的形式引入`jquery`和`font-awesome`
 ```
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laravel</title>
     <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
