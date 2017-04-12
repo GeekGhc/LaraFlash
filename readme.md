@@ -1,7 +1,7 @@
 # Flash Message For Laravel5
 
 ## 介绍
-> 整个package采用了Laravel内置的```Illuminate\Session\Store```中的一次性请求flash函数.
+> 基于 [Jeffery Way's Flash Package](https://github.com/laracasts/flash)
 
 ## 安装
 #### 使用`composer`安装
@@ -52,6 +52,7 @@ public function store()
 - laraflash()->warning('Message!')
 
 ## 例子
+在此之前使用`cdn的形式`引入`jquery`和`font-awesome`
 ```
 <!DOCTYPE html>
 <html>
