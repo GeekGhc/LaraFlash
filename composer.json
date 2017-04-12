@@ -1,0 +1,21 @@
+{
+    "name": "geekghc/flash",
+    "description": "flash for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GeekGhc",
+            "email": "ghcgavin@sina.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "GeekGhc\\LaraFlash\\": "src/GeekGhc/LaraFlash"
+        },
+        "files": [
+            "src/GeekGhc/LaraFlash/function.php"
+        ]
+    }
+}
