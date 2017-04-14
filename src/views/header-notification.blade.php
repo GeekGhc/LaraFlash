@@ -8,7 +8,7 @@
         transform: translateX(-50%);
         transition: opacity .3s, top .9s;
         background: #f8f8f9;
-        padding: 1em 1.5em;
+        padding: 1.2em 2.2em;
         opacity: 0;
         overflow: hidden;
         line-height: 1.4285em;
@@ -19,9 +19,9 @@
         cursor: pointer;
         position: absolute;
         margin: 0em;
+        top: 0.48575em;
         right: 0.5em;
         opacity: 0.7;
-        top: 1.1em;
         transition: opacity 0.1s ease;
     }
 
