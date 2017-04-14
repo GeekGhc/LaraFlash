@@ -1,10 +1,7 @@
 # Flash Message For Laravel5
 
 [![Build Status](https://travis-ci.org/GeekGhc/LaraFlash.svg?branch=master)](https://travis-ci.org/GeekGhc/LaraFlash)
-
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GeekGhc/LaraFlash/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GeekGhc/LaraFlash/?branch=master)
-
-[![Build Status](https://scrutinizer-ci.com/g/GeekGhc/LaraFlash/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GeekGhc/LaraFlash/build-status/master)
 
 ## 介绍
 > 基于 [Jeffery Way's Flash Package](https://github.com/laracasts/flash)
