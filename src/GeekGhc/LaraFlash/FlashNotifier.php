@@ -1,15 +1,16 @@
 <?php
-
 namespace GeekGhc\LaraFlash;
-use Illuminate\Session\Store;
+
+use GeekGhc\LaraFlash\SessionStore as SessionStore;
+
 
 class FlashNotifier
 {
     private $session;
 
-    public function __construct(Store $session)
+    function __construct(SessionStore $session)
     {
-        $this->session=$session;
+        $this->session = $session;
     }
 
     public function success($message)

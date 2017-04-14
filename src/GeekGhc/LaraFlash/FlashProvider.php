@@ -27,8 +27,13 @@ class FlashProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->bind(
+            'GeekGhc\LaraFlash\SessionStore',
+            'GeekGhc\LaraFlash\LaravelSessionStore'
+        );
+
         $this->app->singleton('laraflash',function(){
-            return $this->app->make(\GeekGhc\LaraFlash\FlashNotifier::class);
+            return $this->app->make('GeekGhc\LaraFlash\FlashNotifier');
         });
     }
 }
