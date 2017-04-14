@@ -10,6 +10,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "php": ">=5.5.9",
         "doctrine/dbal" : "2.4.*"
     },
     "require-dev": {
@@ -17,8 +18,8 @@
         "mockery/mockery": "0.9.*"
     },
     "autoload": {
-        "psr-4": {
-            "GeekGhc\\LaraFlash\\": "src/"
+        "psr-0": {
+            "GeekGhc\\LaraFlash": "src/"
         },
         "files": [
             "src/GeekGhc/LaraFlash/function.php"

@@ -1,9 +1,6 @@
 <?php
 namespace GeekGhc\LaraFlash;
 
-use GeekGhc\LaraFlash\SessionStore as SessionStore;
-
-
 class FlashNotifier
 {
     private $session;

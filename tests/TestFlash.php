@@ -2,7 +2,7 @@
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
-use GeekGhc\LaraFlash\FlashNotifier as FlashNotify;
+use GeekGhc\LaraFlash\FlashNotifier;
 
 class TestFlash extends TestCase
 {
@@ -12,30 +12,34 @@ class TestFlash extends TestCase
     public function setUp()
     {
         $this->session = m::mock('GeekGhc\LaraFlash\SessionStore');
-        $this->flashy = new FlashNotify($this->session);
+        $this->flashy = new FlashNotifier($this->session);
     }
 
     public function testSuccess()
     {
-        $this->flashy->success('Message');
-        $this->assertEquals(Session::get('flash_notification.message'), 'Message');
+        $this->session->shouldReceive('flash')->with('flash_notification.message', 'Welcome Aboard');
+        $this->session->shouldReceive('flash')->with('flash_notification.type', 'success');
+        $this->flashy->success('Welcome Aboard');
     }
 
     public function testError()
     {
-        $this->flashy->error('Message');
-        $this->assertEquals(Session::get('flash_notification.message'), 'Message');
+        $this->session->shouldReceive('flash')->with('flash_notification.message', 'Welcome Aboard');
+        $this->session->shouldReceive('flash')->with('flash_notification.type', 'error');
+        $this->flashy->error('Welcome Aboard');
     }
 
     public function testInfo()
     {
-        $this->myflash->info('Message');
-        $this->assertEquals(Session::get('flash_notification.message'), 'Message');
+        $this->session->shouldReceive('flash')->with('flash_notification.message', 'Welcome Aboard');
+        $this->session->shouldReceive('flash')->with('flash_notification.type', 'info');
+        $this->flashy->info('Welcome Aboard');
     }
 
     public function testWarning()
     {
-        $this->myflash->warning('Message');
-        $this->assertEquals(Session::get('flash_notification.message'), 'Message');
+        $this->session->shouldReceive('flash')->with('flash_notification.message', 'Welcome Aboard');
+        $this->session->shouldReceive('flash')->with('flash_notification.type', 'warning');
+        $this->flashy->warning('Welcome Aboard');
     }
 }
