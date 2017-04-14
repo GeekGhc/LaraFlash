@@ -13,7 +13,7 @@ composer require geekghc/flash
 ```
 或者在你的`composer.json`里`require`部分添加
 ```php
-"geekghc/flash":"~1.0"
+"geekghc/flash":"~2.0"
 ```
 #### 下载完毕之后在```config/app.php```添加`service provider`
 ```php
