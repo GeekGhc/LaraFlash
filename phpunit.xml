@@ -13,4 +13,12 @@
             <directory suffix="Test.php">tests/</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+            <exclude>
+                <directory suffix="Provider.php">src/GeekGhc/LaraFlash/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>

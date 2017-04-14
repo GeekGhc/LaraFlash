@@ -1,5 +1,7 @@
 # Flash Message For Laravel5
 
+[![Build Status](https://travis-ci.org/GeekGhc/LaraFlash.svg?branch=master)](https://travis-ci.org/GeekGhc/LaraFlash)
+
 ## 介绍
 > 基于 [Jeffery Way's Flash Package](https://github.com/laracasts/flash)
 
