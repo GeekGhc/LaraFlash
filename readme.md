@@ -24,7 +24,7 @@ composer require geekghc/flash
 #### 下载完毕之后在```config/app.php```添加`service provider`
 ```php
 'providers' => [
-    GeekGhc\LaraFlash\MyFlashProvider::class,
+    GeekGhc\LaraFlash\FlashProvider::class,
 ];
 ```
 为了方便使用 可以再去添加一个`alias`
@@ -60,7 +60,7 @@ public function store()
 - LaraFlash::warning('Message')
 
 #### 当然你可也以使用```laraflash()```这样的`helper function`
-- laraflash('Message!')
+- laraflash('Message!') 默认为`info`
 - laraflash()->success('Message!')
 - laraflash()->info('Message!')
 - laraflash()->error('Message!')
@@ -89,4 +89,4 @@ public function store()
 ```
 php artisan vendor:publish
 ```
-##### 这样一来视图文件会放在你的```resources/views/vendor/laraFlash```目录下
+#### 这样一来视图文件会放在你的```resources/views/vendor/laraFlash```目录下
